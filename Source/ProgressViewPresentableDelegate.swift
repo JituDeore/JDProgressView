@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol ProgressViewPresentableDelegate {
+public protocol ProgressViewPresentableDelegate {
     var progressView: UIActivityIndicatorView { get }
     var parantView: UIView { get }
 }
