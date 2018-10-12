@@ -2,8 +2,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDProgressView'
-  s.version          = '1.0'
-  s.summary          = 'A short description of JDProgressView.'
+  s.version          = '1.1'
+  s.summary          = 'This helps to add the loader with less efforts'
 
 
   s.description      = <<-DESC
