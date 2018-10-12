@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-public protocol ProgressViewPresentableDelegate {
+@objc public protocol ProgressViewPresentableDelegate: class {
     var progressView: UIActivityIndicatorView { get }
     var parantView: UIView { get }
 }
 
-extension ProgressViewPresentableDelegate where Self : UIViewController{
+public extension ProgressViewPresentableDelegate where Self : UIViewController{
     /**
      Shows progress.
      */
-    func showProgress() {
+    func startAnimatingProgressView() {
         parantView.addSubview(progressView)
         progressView.translatesAutoresizingMaskIntoConstraints = false;
         parantView.addConstraint(NSLayoutConstraint(item: progressView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0))
@@ -28,7 +28,7 @@ extension ProgressViewPresentableDelegate where Self : UIViewController{
     /**
      Hides progress.
      */
-    func hideProgress() {
+    func stopAnimatingProgressView() {
         progressView.stopAnimating()
     }
 }

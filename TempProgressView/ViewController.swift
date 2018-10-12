@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     @IBAction func showHideProgress(_ sender: Any) {
         btnShowTitle.isSelected = !btnShowTitle.isSelected
         if btnShowTitle.isSelected{
-             showProgress()
+             startAnimatingProgressView()
         }else{
-           hideProgress()
+           stopAnimatingProgressView()
         }
     }
     
