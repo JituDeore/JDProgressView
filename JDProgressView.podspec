@@ -14,7 +14,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT'}
   s.author           = { 'JituDeore' => 'jitendra.deore@verse.in' }
-  s.source           = { :git => 'https://github.com/JituDeore/JDProgressView.git':tag => v1.0}
+  s.source           = { :git => 'https://github.com/JituDeore/JDProgressView.git': tag => 'v1.0'}
   # s.social_media_url = 'https://twitter.com/jitendradeore5'
 
   s.ios.deployment_target = '8.0'
