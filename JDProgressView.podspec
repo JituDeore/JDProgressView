@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDProgressView'
-  s.version          = '0.1.0'
+  s.version          = 'v1.0'
   s.summary          = 'A short description of JDProgressView.'
 
 
@@ -14,7 +14,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT'}
   s.author           = { 'JituDeore' => 'jitendra.deore@verse.in' }
-  s.source           = { :git => 'https://github.com/JituDeore/JDProgressView.git': tag => 'v1.0'}
+  s.source           = { :git => 'https://github.com/JituDeore/JDProgressView.git', :tag => s.version}
   # s.social_media_url = 'https://twitter.com/jitendradeore5'
 
   s.ios.deployment_target = '8.0'
