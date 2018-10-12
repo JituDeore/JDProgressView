@@ -13,9 +13,9 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/JituDeore/JDProgressView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT'}
-  s.author           = { 'JituDeore' => 'jitendra.deore@verse.in' }
+  s.author           = { 'JituDeore' => 'jitendradeore5@gmail.com' }
   s.source           = { :git => 'https://github.com/JituDeore/JDProgressView.git', :tag => s.version}
-  # s.social_media_url = 'https://twitter.com/jitendradeore5'
+  s.social_media_url = 'https://twitter.com/jitendradeore5'
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'Source/*.swift'
