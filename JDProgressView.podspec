@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDProgressView'
-  s.version          = '1.3'
+  s.version          = '1.4'
   s.summary          = 'This helps to add the loader with less efforts'
 
 
