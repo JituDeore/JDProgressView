@@ -11,7 +11,7 @@ import UIKit
 
 @objc public protocol ProgressViewPresentableDelegate: class {
     var progressView: UIActivityIndicatorView { get }
-    var parantView: UIView { get }
+    var parentView: UIView { get }
 }
 
 public extension ProgressViewPresentableDelegate where Self : UIViewController{
@@ -19,10 +19,13 @@ public extension ProgressViewPresentableDelegate where Self : UIViewController{
      Shows progress.
      */
     func startAnimatingProgressView() {
-        parantView.addSubview(progressView)
-        progressView.translatesAutoresizingMaskIntoConstraints = false;
-        parantView.addConstraint(NSLayoutConstraint(item: progressView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0))
-        parantView.addConstraint(NSLayoutConstraint(item: progressView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0))
+        if progressView.superview != parentView {
+            parentView.addSubview(progressView)
+            progressView.translatesAutoresizingMaskIntoConstraints = false;
+            parentView.addConstraint(NSLayoutConstraint(item: progressView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0))
+            parentView.addConstraint(NSLayoutConstraint(item: progressView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0))
+        }
+        
         progressView.startAnimating()
     }
     /**

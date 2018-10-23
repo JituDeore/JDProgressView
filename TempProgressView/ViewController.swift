@@ -40,7 +40,7 @@ extension ViewController: ProgressViewPresentableDelegate{
     var progressView: UIActivityIndicatorView {
         return activity
     }
-    var parantView: UIView{
+    var parentView: UIView{
         return self.view
     }
 }
